@@ -29,6 +29,7 @@ To install and build PX4, issue the following commands:
 
 ```bash
 git clone -b v1.10.2 https://github.com/PX4/PX4-Autopilot.git px4
+git submodule update --init --recursive
 cd px4
 echo "export PX4_ROOT=$(realpath .)" >> ~/.bashrc  # or .zshrc
 sudo apt install libgstreamer-plugins-base1.0-dev # libgstreamer is a dependency!
